@@ -37,7 +37,7 @@ if (nav) {
 
 const bags = [
   {
-    name:         'The Lena Tote',
+    name:         'Tom Tempête',
     category:     'Tote Bag',
     tagline:      '"Spacious enough for your whole world."',
     material:     'Full-grain leather',
@@ -53,7 +53,7 @@ const bags = [
     ]
   },
   {
-    name:         'The Mara Crossbody',
+    name:         'The Léonce Liesbeth',
     category:     'Crossbody',
     tagline:      '"Small bag, big energy."',
     material:     'Vegetable-tanned leather',
@@ -69,7 +69,7 @@ const bags = [
     ]
   },
   {
-    name:         'The Noor Bucket',
+    name:         'The Ise box',
     category:     'Bucket Bag',
     tagline:      '"Effortless, always."',
     material:     'Soft pebbled leather',
@@ -84,13 +84,13 @@ const bags = [
     ]
   },
   {
-    name:         'The Ines Clutch',
+    name:         'Kip',
     category:     'Clutch',
     tagline:      '"Made for those evenings."',
     material:     'Vegetable-tanned leather',
     size:         '28 × 16 × 4 cm',
     lead:         '2 weeks',
-    price:        '€ 95',
+    price:        '€ 99.000.000',
     available:    false,
     imageSrc:     null,   // e.g. 'images/ines-clutch.jpg'
     colors: [
