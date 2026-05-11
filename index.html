@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISOLITTO — Handmade Bags</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-logo">
+      <a href="index.html">Isolitto</a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Collection</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div class="nav-tagline">Handmade with love</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <span class="hero-label">Est. 2026 — Antwerp</span>
+      <h1 class="hero-title">Every bag<br><em>tells a story.</em></h1>
+      <p class="hero-sub">Crafted by hand. Made to last.<br>Carried with intention.</p>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-bg-text">ISOLITTO</div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection">
+    <div class="collection-header">
+      <p class="section-label">The Collection</p>
+      <h2 class="section-title">Current Pieces</h2>
+    </div>
+
+    <!-- ITEM SHOWCASE -->
+    <div class="showcase">
+
+      <!-- Navigation Arrows -->
+      <button class="showcase-nav prev" id="prevBtn" aria-label="Previous item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M5 12l7-7M5 12l7 7"/></svg>
+      </button>
+      <button class="showcase-nav next" id="nextBtn" aria-label="Next item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M14 5l7 7-7 7"/></svg>
+      </button>
+
+      <!-- Item Counter -->
+      <div class="showcase-counter">
+        <span id="currentIndex">01</span>
+        <span class="counter-sep"></span>
+        <span id="totalItems">04</span>
+      </div>
+
+      <!-- Item Display -->
+      <div class="showcase-stage" id="showcaseStage">
+
+        <!-- IMAGE -->
+        <div class="item-image-wrap" id="itemImageWrap">
+          <div class="item-image-placeholder" id="itemImage">
+            <!-- REPLACE THIS DIV WITH YOUR IMAGE TAG, e.g.: -->
+            <!-- <img src="images/bag1.jpg" alt="The Lena Tote"> -->
+            <div class="placeholder-inner">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 30C28 24.477 31.134 20 35 20H45C48.866 20 52 24.477 52 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <rect x="16" y="30" width="48" height="38" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M28 44h24M28 52h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <span>Your photo here</span>
+            </div>
+          </div>
+          <div class="item-number-bg" id="itemNumberBg">01</div>
+        </div>
+
+        <!-- DETAILS -->
+        <div class="item-details" id="itemDetails">
+          <div class="item-meta-top">
+            <span class="item-category" id="itemCategory">Tote</span>
+            <span class="item-availability" id="itemAvailability">Available</span>
+          </div>
+
+          <h2 class="item-name" id="itemName">The Lena Tote</h2>
+          <p class="item-tagline" id="itemTagline">"Spacious enough for your whole world."</p>
+
+          <div class="item-divider"></div>
+
+          <div class="item-info-grid">
+            <div class="item-info-row">
+              <span class="info-label">Material</span>
+              <span class="info-value" id="itemMaterial">Full-grain leather</span>
+            </div>
+            <div class="item-info-row">
+              <span class="info-label">Colors</span>
+              <div class="color-swatches" id="itemColors">
+                <span class="swatch" style="background:#8B6F5E;" title="Caramel"></span>
+                <span class="swatch" style="background:#2C2C2C;" title="Midnight"></span>
+                <span class="swatch" style="background:#C4A882;" title="Sand"></span>
+              </div>
+            </div>
+            <div class="item-info-row">
+              <span class="info-label">Dimensions</span>
+              <span class="info-value" id="itemSize">38 × 28 × 12 cm</span>
+            </div>
+            <div class="item-info-row">
+              <span class="info-label">Lead time</span>
+              <span class="info-value" id="itemLead">2–3 weeks</span>
+            </div>
+            <div class="item-info-row">
+              <span class="info-label">Price</span>
+              <span class="info-value item-price" id="itemPrice">€ 185</span>
+            </div>
+          </div>
+
+          <div class="item-actions">
+            <a href="contact.html" class="btn-order">Order this piece</a>
+            <p class="order-note">Made to order — each bag is unique</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Dots -->
+      <div class="showcase-dots" id="showcaseDots"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip">
+    <div class="about-strip-inner">
+      <div class="about-col">
+        <span class="about-num">100%</span>
+        <span class="about-txt">Handmade</span>
+      </div>
+      <div class="about-col">
+        <span class="about-num">∞</span>
+        <span class="about-txt">Care & detail</span>
+      </div>
+      <div class="about-col">
+        <span class="about-num">01</span>
+        <span class="about-txt">Of a kind</span>
+      </div>
+      <div class="about-col">
+        <span class="about-num">♥</span>
+        <span class="about-txt">Made with love</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Handcrafted</span><span>·</span>
+      <span>Made to Order</span><span>·</span>
+      <span>Quality Materials</span><span>·</span>
+      <span>With Love</span><span>·</span>
+      <span>Antwerp</span><span>·</span>
+      <span>Handcrafted</span><span>·</span>
+      <span>Made to Order</span><span>·</span>
+      <span>Quality Materials</span><span>·</span>
+      <span>With Love</span><span>·</span>
+      <span>Antwerp</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">ISOLITTO</div>
+      <div class="footer-links">
+        <a href="index.html">Collection</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Isolitto — All bags made by hand, all rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
